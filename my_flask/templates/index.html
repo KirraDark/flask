@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Участники мероприятия</title>
+</head>
+<body>
+   <h1>Участники мероприятия</h1>
+   <ul>
+       {% for participant in participants %}
+           <li>{{ participant.name }} - {{ participant.email }}</li>
+       {% endfor %}
+   </ul>
+   <a href="/register">Зарегистрировать нового участника</a>
+</body>
+</html>
